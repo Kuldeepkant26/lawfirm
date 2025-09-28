@@ -9,6 +9,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
     display: flex;
@@ -17,6 +19,9 @@
     z-index: 9998;
     padding: 1rem;
     animation: devOverlayFadeIn 0.3s ease-out;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
 }
 
 @keyframes devOverlayFadeIn {
@@ -33,6 +38,9 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     animation: devModalSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    margin: auto;
+    transform: translateZ(0);
 }
 
 @keyframes devModalSlideIn {
@@ -209,13 +217,36 @@
    RESPONSIVE DESIGN
    ============================================================================ */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .dev-modal-overlay {
-        padding: 0.5rem;
+        padding: 0.75rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .dev-modal-container {
-        max-width: 100%;
+        max-width: 90vw;
+        width: 90vw;
+    }
+
+    .dev-modal-content {
+        padding: 1.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dev-modal-overlay {
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-height: 100dvh; /* Dynamic viewport height for better mobile support */
+    }
+
+    .dev-modal-container {
+        max-width: calc(100vw - 1rem);
+        width: calc(100vw - 1rem);
+        margin: auto;
     }
 
     .dev-modal-header {
