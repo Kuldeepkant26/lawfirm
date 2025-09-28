@@ -1,0 +1,467 @@
+/* ============================================================================
+   LAW FIRM FOOTER - PREMIUM DESIGN WITH UNIQUE SELECTORS
+   ============================================================================ */
+
+/* Main Footer Container */
+.law-firm-footer {
+    background: #ffffff;
+    border-top: 4px solid #000000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.law-firm-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #000000 0%, #666666 50%, #000000 100%);
+}
+
+/* Footer Wrapper */
+.law-firm-footer .law-footer-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Main Footer Content Grid */
+.law-firm-footer .law-footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    padding: 3rem 2rem 2rem;
+    background: #ffffff;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+/* ============================================================================
+   BRAND COLUMN STYLING
+   ============================================================================ */
+
+.law-firm-footer .law-footer-brand {
+    padding-right: 2rem;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.law-firm-footer .law-footer-brand .law-logo-icon {
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-text .law-firm-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-text .law-firm-tagline {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-description {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-stats .law-stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f8f8;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-stats .law-stat-item:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.law-firm-footer .law-footer-brand .law-brand-stats .law-stat-item .law-stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: inherit;
+}
+
+.law-firm-footer .law-footer-brand .law-brand-stats .law-stat-item .law-stat-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.25rem;
+    color: inherit;
+}
+
+/* ============================================================================
+   SERVICES COLUMN STYLING  
+   ============================================================================ */
+
+.law-firm-footer .law-footer-services .law-column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.law-firm-footer .law-footer-services .law-column-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item {
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item:last-child {
+    border-bottom: none;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item .law-service-link {
+    color: #333333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item .law-service-link::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item .law-service-link:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: translateX(0.25rem);
+}
+
+.law-firm-footer .law-footer-services .law-services-nav .law-services-list .law-service-item .law-service-link:hover::before {
+    transform: translateX(0.25rem) scale(1.2);
+}
+
+/* ============================================================================
+   QUICK LINKS COLUMN STYLING
+   ============================================================================ */
+
+.law-firm-footer .law-footer-links .law-column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.law-firm-footer .law-footer-links .law-column-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list .law-quick-item {
+    margin-bottom: 0.75rem;
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list .law-quick-item .law-quick-link {
+    color: #333333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list .law-quick-item .law-quick-link::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #666666;
+    transition: all 0.3s ease;
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list .law-quick-item .law-quick-link:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: translateX(0.25rem);
+}
+
+.law-firm-footer .law-footer-links .law-quick-nav .law-quick-list .law-quick-item .law-quick-link:hover::before {
+    color: #000000;
+    transform: translateX(0.25rem);
+}
+
+/* ============================================================================
+   CONTACT COLUMN STYLING
+   ============================================================================ */
+
+.law-firm-footer .law-footer-contact .law-column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.law-firm-footer .law-footer-contact .law-column-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 6px;
+    border-left: 4px solid #000000;
+    transition: all 0.3s ease;
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item:hover {
+    background: #f0f0f0;
+    transform: translateX(0.25rem);
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item .law-contact-icon {
+    font-size: 1.2rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item .law-contact-details .law-contact-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item .law-contact-details .law-contact-value {
+    display: block;
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ============================================================================
+   BOTTOM BAR STYLING
+   ============================================================================ */
+
+.law-firm-footer .law-footer-bottom {
+    background: #000000;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #333333;
+    margin-top: auto;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content .law-copyright .law-copyright-text {
+    color: #cccccc;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content .law-legal-links .law-legal-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content .law-legal-links .law-legal-nav .law-legal-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content .law-legal-links .law-legal-nav .law-legal-link:hover {
+    color: #ffffff;
+}
+
+.law-firm-footer .law-footer-bottom .law-bottom-content .law-legal-links .law-legal-nav .law-link-separator {
+    color: #666666;
+    font-weight: 300;
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (max-width: 1024px) {
+    .law-firm-footer .law-footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    .law-firm-footer .law-footer-brand {
+        grid-column: 1 / -1;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .law-firm-footer .law-footer-brand .law-brand-stats {
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .law-firm-footer .law-footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem 1rem;
+        text-align: center;
+    }
+
+    .law-firm-footer .law-footer-brand .law-brand-logo {
+        justify-content: center;
+    }
+
+    .law-firm-footer .law-footer-brand .law-brand-stats {
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    .law-firm-footer .law-footer-bottom .law-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .law-firm-footer .law-footer-contact .law-contact-info .law-contact-group .law-contact-item {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .law-firm-footer .law-footer-content {
+        padding: 1.5rem 0.75rem 0.75rem;
+    }
+
+    .law-firm-footer .law-footer-bottom {
+        padding: 1rem 0.75rem;
+    }
+
+    .law-firm-footer .law-footer-brand .law-brand-text .law-firm-name {
+        font-size: 1.25rem;
+    }
+
+    .law-firm-footer .law-footer-bottom .law-bottom-content .law-legal-links .law-legal-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
